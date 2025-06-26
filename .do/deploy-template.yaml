@@ -1,0 +1,42 @@
+# See https://docs.digitalocean.com/products/app-platform/reference/app-spec/
+spec:
+  name: mathesar
+  region: nyc
+  databases:
+    - name: mathesar-db
+      engine: PG
+      version: "17"
+      production: true
+
+  services:
+    - name: mathesar-web
+      image:
+        registry_type: DOCKER_HUB
+        registry: mathesar
+        repository: mathesar
+        tag: latest
+      instance_count: 1
+      instance_size_slug: basic-xxs
+      run_command: ""
+      http_port: 8000
+      envs:
+        - key: ALLOWED_HOSTS
+          scope: RUN_TIME
+          value: ${APP_DOMAIN}
+        - key: POSTGRES_DB
+          scope: RUN_TIME
+          value: ${mathesar-db.DATABASE}
+        - key: POSTGRES_USER
+          scope: RUN_TIME
+          value: ${mathesar-db.USERNAME}
+        - key: POSTGRES_PASSWORD
+          scope: RUN_TIME
+          value: ${mathesar-db.PASSWORD}
+        - key: POSTGRES_HOST
+          scope: RUN_TIME
+          value: ${mathesar-db.HOSTNAME}
+        - key: POSTGRES_PORT
+          scope: RUN_TIME
+          value: ${mathesar-db.PORT}
+      routes:
+        - path: /
