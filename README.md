@@ -18,6 +18,6 @@ This repository contains configuration necessary for one-click Digital Ocean dep
 
 Click the button below to instantly deploy Mathesar on **DigitalOcean App Platform**:
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/mathesar/mathesar-digital-ocean)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/mathesar/mathesar-digital-ocean/tree/main)
 
 
