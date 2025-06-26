@@ -2,16 +2,6 @@
 spec:
   name: mathesar
   region: nyc
-
-  databases:
-    - name: mathesar-db
-      engine: PG
-      version: "16"
-      cluster_name: mathesar-cluster
-      production: true
-      db_name: mathesar_django
-      db_user: mathesar
-
   services:
     - name: mathesar-web
       image:
@@ -44,3 +34,10 @@ spec:
           value: ${mathesar-db.PORT}
       routes:
         - path: /
+  databases:
+    - name: mathesar-db
+      engine: PG
+      version: "15"
+      cluster_name: mathesar-cluster
+      db_name: mathesar_django
+      db_user: mathesar
