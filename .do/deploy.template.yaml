@@ -19,7 +19,7 @@ spec:
           value: ${APP_DOMAIN}
         - key: POSTGRES_DB
           scope: RUN_TIME
-          value: mathesar_django
+          value: ${mathesar-db.DATABASE}
         - key: POSTGRES_USER
           scope: RUN_TIME
           value: mathesar
@@ -37,7 +37,7 @@ spec:
   databases:
     - name: mathesar-db
       engine: PG
-      version: "15"
+      version: "16"
       cluster_name: mathesar-cluster
-      db_name: mathesar_django
+      db_name: mathesar-db
       db_user: mathesar
