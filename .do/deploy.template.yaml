@@ -14,6 +14,9 @@ spec:
       run_command: ""
       http_port: 8000
       envs:
+        - key: SECRET_KEY
+          scope: RUN_TIME
+          value: change-this-later
         - key: ALLOWED_HOSTS
           scope: RUN_TIME
           value: ${APP_DOMAIN}
