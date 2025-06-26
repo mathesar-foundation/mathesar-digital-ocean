@@ -39,5 +39,4 @@ spec:
       engine: PG
       version: "16"
       cluster_name: mathesar-cluster
-      db_name: mathesar-db
       db_user: mathesar
