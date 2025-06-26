@@ -12,6 +12,12 @@
   <a href="https://mathesar.org?ref=github-readme" target="_blank">Website</a> • <a href="https://docs.mathesar.org?ref=github-readme-top" target="_blank">Docs</a> • <a href="https://wiki.mathesar.org/en/community/matrix" target="_blank">Matrix (chat)</a> • <a href="https://discord.gg/enaKqGn5xx" target="_blank">Discord</a> • <a href="https://wiki.mathesar.org/" target="_blank">Contributor Wiki</a>
 </p>
 
-# One-click  Digital Ocean Deploy for Mathesar
+# [WORK IN PROGRESS] One-click Digital Ocean Deploy for Mathesar
 
 This repository contains configuration necessary for one-click Digital Ocean deployments of [Mathesar](https://github.com/mathesar-foundation/mathesar).
+
+Click the button below to instantly deploy Mathesar on **DigitalOcean App Platform**:
+
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/mathesar/mathesar-digital-ocean/tree/main)
+
+
