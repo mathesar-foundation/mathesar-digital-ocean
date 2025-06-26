@@ -2,11 +2,12 @@
 spec:
   name: mathesar
   region: nyc
+
   databases:
-    - name: mathesar-db
-      cluster_name: mathesar-cluster
-      engine: PG
+    - engine: PG
+      name: mathesar-db
       version: "17"
+      cluster_name: mathesar-cluster
       production: true
 
   services:
