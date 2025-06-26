@@ -4,6 +4,7 @@ spec:
   region: nyc
   databases:
     - name: mathesar-db
+      cluster_name: mathesar-cluster
       engine: PG
       version: "17"
       production: true
