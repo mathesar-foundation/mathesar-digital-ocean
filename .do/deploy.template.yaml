@@ -32,6 +32,9 @@ spec:
         - key: POSTGRES_PORT
           scope: RUN_TIME
           value: ${mathesar-db.PORT}
+        - key: WEB_CONCURRENCY
+          scope: RUN_TIME
+          value: 3
       routes:
         - path: /
   databases:
