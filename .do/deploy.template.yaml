@@ -34,7 +34,7 @@ spec:
           value: ${mathesar-db.PORT}
         - key: WEB_CONCURRENCY
           scope: RUN_TIME
-          value: 3
+          value: "3"
       routes:
         - path: /
   databases:
